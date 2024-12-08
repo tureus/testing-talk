@@ -64,6 +64,7 @@ Any issues that reach the kids will become KMart's problem. KMart can refer to t
 ### A toy's story cont.
 
   Q: How does a manfuacturer know that each transform can actually transform from truck to autobot?
+
   A: They don't! They set up a process to address known sources of defects at every step of the way and routinely train and assess their staff to make sure the process is followed
 
 ---
@@ -71,6 +72,7 @@ Any issues that reach the kids will become KMart's problem. KMart can refer to t
 ### A toy's story cont.
 
   Q: Which step in manufacturing is the most economical for addressing systemic issues?
+
   A: You tell me 😏
 
 ---
@@ -78,6 +80,7 @@ Any issues that reach the kids will become KMart's problem. KMart can refer to t
 ### A toy's story cont.
 
   Q: What's the best way to feed changes through the system?
+
   A: Again, you tell me 😏
 
 ---
@@ -85,6 +88,7 @@ Any issues that reach the kids will become KMart's problem. KMart can refer to t
 ### A toy's story cont.
 
   Q: Why does the end quality matter?
+
   A: Again, you tell me 😏
 
 ---
