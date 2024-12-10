@@ -122,7 +122,7 @@ Do some companies have a better reputation than others? Are you willing to pay a
    * A consistent, reproducible process
    * Change is the only constant, we improve our process whenever we can
    * Measurable outcomes
-   * Prevention is our philosphy
+   * Prevention is our philosophy
    * Detection is our backup
 
 ---
@@ -326,6 +326,34 @@ We are not managing:
 
 ---
 
+### Unit test: controller redirects
+
+```
+# app/controllers/users_controller.rb
+class UsersController < ApplicationController
+  def index
+    sort_by = params[:sort_by]
+    @users = User.order(sort_by)
+    render
+  end
+end
+```
+
+```
+# spec/requests/users_spec.rb
+RSpec.describe "Users", type: :request do
+  describe "GET /index" do
+    it "returns http success" do
+      expect(User).to receive(:order).with("'id DESC'")
+      get "/users/index?sort_by='id DESC'"
+      expect(response).to have_http_status(:success)
+    end
+  end
+end
+```
+
+---
+
 ### The duality of app code and test code
 
 Two applications pulling at eachother
@@ -336,10 +364,3 @@ Two applications pulling at eachother
    * Test the unhappy path
    * Keep tests small and direct
      * All levels of developer should be able to easily read them
-
-
----
-
-A test is like a bouncing a ball against a wall, the wall is your app, the test is the ball.
-
-Note: Generate a set of pictures showing the same wall copied many times and a ball having different paths. Each test should be "one bounce" to keep it easy to read and follow, if possible.
